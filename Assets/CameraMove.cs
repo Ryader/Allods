@@ -3,7 +3,7 @@ using UnityEngine;
 public class CameraMove : MonoBehaviour
 {
     [SerializeField] private Transform _target;
-    [SerializeField] private Vector3 _offset;
+    [SerializeField] internal Vector3 _offset;
     [SerializeField] float _damping;
 
     private Vector3 _velocity = Vector3.zero;

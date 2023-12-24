@@ -1,70 +1,39 @@
-using System.Collections;
 using UnityEngine;
 
 internal class Menu : MonoBehaviour
 {
-    [SerializeField] private GameObject Scroll; // Основной свиток
 
-    [SerializeField] private GameObject Panel;  // Панель с кнопками меню
-    [SerializeField] private GameObject Panel2; // Панель настройки
-    [SerializeField] private GameObject Panel3; // Панель авторы
-    [SerializeField] private GameObject Panel4; // Панель сохранений
-    
-    public Animator animator;
+    [SerializeField] private GameObject _menuPanel;  // Главное меню
+    [SerializeField] private CameraMove _cameraMove;
+    private GameObject _currentPanel;
 
-
-
-
-
-    public void SavePanel()
+    public void NewGame()
     {
-        Panel.SetActive(false);
-        Panel4.SetActive(true);
-       
+        _cameraMove._offset = new Vector3(0, 0, -2);
+        _menuPanel.SetActive(false);
     }
 
-    public void SaveExit()
+    public void OpenPanel(GameObject panel)
     {
-        Panel.SetActive(true);
-        Panel4.SetActive(false);
-       
+        if (_currentPanel != null)
+        {
+            _currentPanel.SetActive(false);
+        }
+
+        panel.SetActive(true);
+        _currentPanel = panel;
+        _menuPanel.SetActive(false);
     }
 
-
-    public void Option()
+    public void CloseCurrentPanel()
     {
-        Panel.SetActive(false);
-        Panel2.SetActive(true);
-       
-    }
+        if (_currentPanel != null)
+        {
+            _currentPanel.SetActive(false);
+            _currentPanel = null;
+        }
 
-    public void OptionExit()
-    {
-        Panel.SetActive(true);
-        Panel2.SetActive(false);
-        
-    }
-
-
-    public void Developers()
-    {
-        Panel.SetActive(false);
-        Panel3.SetActive(true);
-
-        animator.SetBool("Replay", false);
-        animator.SetBool("author", true);
-       
-
-    }
-
-    public void DevelopersExit()
-    {
-        Panel.SetActive(true);
-        Panel3.SetActive(false);
-
-        animator.SetBool("author", false);
-        animator.SetBool("Replay", true);
-       
+        _menuPanel.SetActive(true);
     }
 
     // Выход из игры
