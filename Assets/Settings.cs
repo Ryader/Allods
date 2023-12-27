@@ -18,7 +18,7 @@ public class Settings : MonoBehaviour
     {
         resolutions = Screen.resolutions;
         _resolutionDropdown.ClearOptions();
-        List<string> options = new List<string>();
+        List<string> options = new();
         int currentResolutionIndex = 0;
         for (int i = 0; i < resolutions.Length; i++)
         {
@@ -41,7 +41,7 @@ public class Settings : MonoBehaviour
 
     private string FormatResolution(Resolution resolution)
     {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new();
         sb.Append(resolution.width);
         sb.Append(" x ");
         sb.Append(resolution.height);

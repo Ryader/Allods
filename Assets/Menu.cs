@@ -1,14 +1,21 @@
 using UnityEngine;
 
-internal class Menu : MonoBehaviour
+public class Menu : MonoBehaviour
 {
 
-    [SerializeField] private GameObject _menuPanel;  // Главное меню
+    [SerializeField] internal GameObject _menuPanel;
+
     [SerializeField] private CameraMove _cameraMove;
     private GameObject _currentPanel;
 
+    private void Awake()
+    {
+        Time.timeScale = 0f;
+    }
+
     public void NewGame()
     {
+        Time.timeScale = 1f;
         _cameraMove._offset = new Vector3(0, 0, -2);
         _menuPanel.SetActive(false);
     }
@@ -36,7 +43,6 @@ internal class Menu : MonoBehaviour
         _menuPanel.SetActive(true);
     }
 
-    // Выход из игры
     public void Quit()
     {
         Application.Quit();
