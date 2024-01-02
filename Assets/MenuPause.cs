@@ -7,27 +7,20 @@ public class MenuPause : MonoBehaviour
     [SerializeField] private GameObject _pauseMenuUI;
     [SerializeField] private CameraMove _cameraMove;
     [SerializeField] private Menu _menu;
-   
+    [SerializeField] private GameObject _hBar;
 
     void Update()
     {
-
         if (!_menu._menuPanel.activeSelf)
         {
-            // Если главное меню не открыто, открываем панель меню паузы
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                Resume();
+                _gameIsPaused = !_gameIsPaused;
+                _pauseMenuUI.SetActive(_gameIsPaused);
+                Time.timeScale = _gameIsPaused ? 0f : 1f;
+                _hBar.SetActive(!_gameIsPaused);
             }
         }
-
-    }
-
-    public void Resume()
-    {
-        _pauseMenuUI.SetActive(!_gameIsPaused);
-        Time.timeScale = _gameIsPaused ? 1f : 0f;
-        _gameIsPaused = !_gameIsPaused;
     }
 
     public void ExitMenu()
@@ -36,5 +29,6 @@ public class MenuPause : MonoBehaviour
         _cameraMove._offset = new Vector3(0, 0, -11);
         _pauseMenuUI.SetActive(false);
         _menu._menuPanel.SetActive(true);
+        _hBar.SetActive(false);
     }
 }

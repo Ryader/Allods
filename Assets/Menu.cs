@@ -4,12 +4,14 @@ public class Menu : MonoBehaviour
 {
 
     [SerializeField] internal GameObject _menuPanel;
+    [SerializeField] internal GameObject _hBar;
+    [SerializeField] internal CameraMove _cameraMove;
 
-    [SerializeField] private CameraMove _cameraMove;
     private GameObject _currentPanel;
 
     private void Awake()
     {
+
         Time.timeScale = 0f;
     }
 
@@ -18,6 +20,7 @@ public class Menu : MonoBehaviour
         Time.timeScale = 1f;
         _cameraMove._offset = new Vector3(0, 0, -2);
         _menuPanel.SetActive(false);
+        _hBar.SetActive(true);
     }
 
     public void OpenPanel(GameObject panel)
@@ -47,4 +50,7 @@ public class Menu : MonoBehaviour
     {
         Application.Quit();
     }
+
+
+
 }

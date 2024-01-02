@@ -56,19 +56,19 @@ public class Settings : MonoBehaviour
     public void SetQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
-        _graphicsDropdown.value = qualityIndex; // Обновите выпадающий список
+        _graphicsDropdown.value = qualityIndex;
     }
 
     public void SetResolution(int resolutionIndex)
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
-        _resolutionDropdown.value = resolutionIndex; // Обновите выпадающий список
+        _resolutionDropdown.value = resolutionIndex;
     }
 
     public void SetFullscreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
-        _fullscreenToggle.isOn = isFullscreen; // Обновите переключатель
+        _fullscreenToggle.isOn = isFullscreen;
     }
 }
