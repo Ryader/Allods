@@ -5,7 +5,7 @@ public class Attack : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private GameObject _punch;
     [SerializeField] private Menu _menu;
-    public float damageAmount = 10f; // Количество урона, которое вы хотите нанести
+    public float damageAmount = 10f;
     internal float _layerWeight = 0f;
 
     private void Update()
@@ -25,17 +25,12 @@ public class Attack : MonoBehaviour
         }
     }
 
-    // Этот метод будет вызываться, когда ваш персонаж столкнется с триггером
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Проверяем, имеет ли столкнувшийся объект тег "Enemy"
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            // Получаем компонент EnemyHP столкнувшегося объекта
-            EnemyHP enemyHP = collision.gameObject.GetComponent<EnemyHP>();
-            if (enemyHP != null)
+            if (collision.gameObject.TryGetComponent<EnemyHP>(out var enemyHP))
             {
-                // Наносим урон врагу
                 enemyHP.AddDamage(-damageAmount);
             }
         }

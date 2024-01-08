@@ -16,6 +16,20 @@ public class PlayerMove : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
+    internal Vector2 PointB()
+    {
+        Vector3 B = new(0f, -0.1449f);
+        Vector3 gB = transform.TransformPoint(B);
+        return gB;
+    }
+
+    internal Vector2 PointA()
+    {
+        Vector3 B = new(0f, 0.1438f);
+        Vector3 gB = transform.TransformPoint(B);
+        return gB;
+    }
+
     private void FixedUpdate()
     {
         _moveVector.x = Input.GetAxis("Horizontal");

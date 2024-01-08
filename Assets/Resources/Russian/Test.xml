@@ -1,0 +1,33 @@
+<dialogue name="Test">
+  <node id="0" npcText="Приветствую!">
+    <answer text="Как делишки?" toNode="1" />
+    <answer text="Могу я чем-нибудь помочь?" toNode="2" questValue="0" questName="TestQuest" />
+    <answer text="Насчет задания…" toNode="3" questValueGreater="1" questName="TestQuest" />
+    <answer text="Мне пора." exit="True" />
+  </node>
+  <node id="1" npcText="Вполне неплохо…">
+    <answer text="Понятно." toNode="0" />
+    <answer text="У меня дела, пока." exit="True" />
+  </node>
+  <node id="2" npcText="Мне не помешает помощь. прогнать шайку бандитов.">
+    <answer text="Без проблем, сейчас сделаю." exit="True" questStatus="1" questName="TestQuest" />
+    <answer text="Это мне не интересно." exit="True" />
+    <answer text="Поговорим о другом…" toNode="0" />
+  </node>
+  <node id="3" npcText="Да, что там с заданием?">
+    <answer text="Напомни, что я должен сделать." toNode="4" questValue="1" questName="TestQuest" />
+    <answer text="Я отказываюсь это делать." toNode="5" questStatus="2" questValue="1" questName="TestQuest" />
+    <answer text="Все готово!" toNode="6" questStatus="3" questValue="2" questName="TestQuest" />
+    <answer text="Неважно." toNode="0" />
+  </node>
+  <node id="4" npcText="С помощью правой кнопки мыши, убить все зеленые квадраты.">
+    <answer text="Ясно." exit="True" />
+  </node>
+  <node id="5" npcText="Что-ж, очень жаль…">
+    <answer text="Прощай." exit="True" />
+  </node>
+  <node id="6" npcText="Просто отлично! Ты справился! Вот твоя награда, возьми это золото.">
+    <answer text="Хочу кое что спросить." toNode="0" />
+    <answer text="Спасибо, мне пора." exit="True" />
+  </node>
+</dialogue>

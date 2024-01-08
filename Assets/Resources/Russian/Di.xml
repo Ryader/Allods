@@ -1,0 +1,26 @@
+<dialogue name="Di">
+  <node id="0" npcText="О, наконечно я тебя дождалась, думала уже уйти.">
+    <answer text="Прости, меня задержал кое кто" toNode="1" />
+    <answer text="Слышал на город нападают какие то существа похожие на людей, что это может быть?" toNode="2" questValue="0" questName="TestQuest" />
+    <answer text="Насчет осады..." toNode="3" questValueGreater="1" questName="TestQuest" />
+    <answer text="Мне пора." exit="True" />
+  </node>
+  <node id="1" npcText="Понятно, небось глашатай был">
+    <answer text="Именно" toNode="0" />
+    <answer text="У меня дела, пока." exit="True" />
+  </node>
+  <node id="2" npcText="Да ты прав, в последнее время участились случаи пропажи людей, ну а спустя время начались нападения на город. Разведчики сообщили что волна врагов на пути. Если хочешь забирай оружие, и дуй у к главным воротам. Только не умри.">
+    <answer text="Рано мне еще умирать. Щас все сделаем" exit="True" questStatus="1" questName="TestQuest" />
+    <answer text="Без проблем" exit="True" questStatus="1" questName="TestQuest"/>
+    <answer text="Страшные вещи у вас тут творяться. Я в деле." exit="True"  questStatus="1" questName="TestQuest" />
+  </node>
+  <node id="3" npcText="Да, что там с нападением?">
+    <answer text="Была жестокая битва, мы в тровем отбивались" toNode="4" questStatus="3" questValue="2" questName="TestQuest" />
+    <answer text="Я не плохо так размялся" toNode="4" questStatus="3" questValue="2" questName="TestQuest" />
+    <answer text="Все готово!" toNode="4" questStatus="3" questValue="2" questName="TestQuest" />
+    <answer text="Как видишь я живой." toNode="4" questStatus="3" questValue="2" questName="TestQuest" />
+  </node>
+  <node id="4" npcText="Нус, слава богу ты живой, пригодишься еще раз такой крепкий. Можешь забирать это оружие, а в награду Держи ключи от дома.">
+    <answer text="Как щедро, спасибо, скоро увидимся." exit="True" />
+  </node>
+</dialogue>
