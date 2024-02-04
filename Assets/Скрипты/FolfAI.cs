@@ -8,18 +8,18 @@ public class FolfAI : MonoBehaviour
     [SerializeField]
     private Animator animator; // Аниматор для управления анимациями AI
 
-    private Vector3 posend; // Конечная позиция, к которой AI будет двигаться
-    private Vector3 direction; // Направление движения AI
-    private Vector3 firstPoint; // Начальная позиция AI
+    [SerializeField] private Vector3 posend; // Конечная позиция, к которой AI будет двигаться
+    [SerializeField] private Vector3 direction; // Направление движения AI
+    [SerializeField] private Vector3 firstPoint; // Начальная позиция AI
 
-    private float reactDistance; // Дистанция, на которой AI начинает реагировать на цель
-    private float thisDistance; // Текущая дистанция до цели
-    private float maxDistance; // Максимальная дистанция, на которой AI может быть от цели
-    private float moveSpeed; // Скорость движения AI
-    private float tmr; // Таймер для управления атаками AI
-    private float ft; // Дистанция от AI до конечной позиции
+    [SerializeField] private float reactDistance; // Дистанция, на которой AI начинает реагировать на цель
+    [SerializeField] private float thisDistance; // Текущая дистанция до цели
+    [SerializeField] private float maxDistance; // Максимальная дистанция, на которой AI может быть от цели
+    [SerializeField] private float moveSpeed; // Скорость движения AI
+    [SerializeField] private float tmr; // Таймер для управления атаками AI
+    [SerializeField] private float ft; // Дистанция от AI до конечной позиции
 
-    private Transform _transform; // Ссылка на компонент Transform этого объекта
+    [SerializeField] private Transform _transform; // Ссылка на компонент Transform этого объекта
 
     void Start()
     {
@@ -30,7 +30,7 @@ public class FolfAI : MonoBehaviour
         _ = GameObject.FindGameObjectWithTag("Player"); // Находим игрока по тегу
         firstPoint = _transform.position; // Сохраняем начальную позицию
         if (maxDistance == 0)
-            maxDistance = 0.2f;
+            maxDistance = 0.3f;
     }
 
     void FixedUpdate()
@@ -52,6 +52,7 @@ public class FolfAI : MonoBehaviour
         if (Mathf.Approximately(thisDistance, maxDistance))
         {
             PunchTarget(); // AI атакует цель
+            Debug.Log("удар");
         }
 
         UpdateDirection(); // Обновляем направление AI
@@ -96,6 +97,7 @@ public class FolfAI : MonoBehaviour
             animator.SetBool("Punch", true); // Включаем анимацию удара
             tmr = 0; // Сбрасываем таймер
             targ.GetComponent<PlayerStats>()._currentHealth -= 10; // Наносим урон цели
+            Debug.Log("удар");
         }
         else
         {

@@ -5,7 +5,7 @@ public class Attack : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private GameObject _punch;
     [SerializeField] private Menu _menu;
-    public float damageAmount = 10f;
+    [SerializeField] private float damageAmount = 10f;
     internal float _layerWeight = 0f;
 
     private void Update()
