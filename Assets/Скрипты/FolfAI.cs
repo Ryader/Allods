@@ -2,136 +2,104 @@ using UnityEngine;
 
 public class FolfAI : MonoBehaviour
 {
-    [SerializeField] // Атрибут, который позволяет видеть приватные переменные в редакторе Unity
-    private Transform targ; // Цель, за которой будет следовать AI
+    public Transform targ;
 
-    [SerializeField]
-    private Animator animator; // Аниматор для управления анимациями AI
+    public Animator animator;
 
-    [SerializeField] private Vector3 posend; // Конечная позиция, к которой AI будет двигаться
-    [SerializeField] private Vector3 direction; // Направление движения AI
-    [SerializeField] private Vector3 firstPoint; // Начальная позиция AI
+    public Vector3 posend;
+    public Vector3 direction;
+    public Vector3 firstPoint;
 
-    [SerializeField] private float reactDistance; // Дистанция, на которой AI начинает реагировать на цель
-    [SerializeField] private float thisDistance; // Текущая дистанция до цели
-    [SerializeField] private float maxDistance; // Максимальная дистанция, на которой AI может быть от цели
-    [SerializeField] private float moveSpeed; // Скорость движения AI
-    [SerializeField] private float tmr; // Таймер для управления атаками AI
-    [SerializeField] private float ft; // Дистанция от AI до конечной позиции
-
-    [SerializeField] private Transform _transform; // Ссылка на компонент Transform этого объекта
+    public float reactDistance;
+    public float thisDistance;
+    public float maxDistance;
+    public float moveSpeed;
+    public float tmr;
+    public float ft;
 
     void Start()
     {
-        _transform = transform; // Сохраняем ссылку на Transform
         ft = 0.1f;
         tmr = 0;
         reactDistance = 5.0f;
-        _ = GameObject.FindGameObjectWithTag("Player"); // Находим игрока по тегу
-        firstPoint = _transform.position; // Сохраняем начальную позицию
+        _ = GameObject.FindGameObjectWithTag("Player");
+        firstPoint = gameObject.transform.position;
         if (maxDistance == 0)
-            maxDistance = 0.3f;
+            maxDistance = 0.2f;
     }
 
     void FixedUpdate()
     {
-        thisDistance = Vector3.Distance(targ.position, _transform.position); // Вычисляем текущую дистанцию до цели
-        ft = Vector3.Distance(_transform.position, posend); // Вычисляем дистанцию до конечной позиции
+        thisDistance = Vector3.Distance(targ.transform.position, gameObject.transform.position);
+        ft = Vector3.Distance(gameObject.transform.position, posend);
 
-        // Если AI находится на расстоянии от цели между maxDistance и reactDistance
         if ((thisDistance >= maxDistance) && (thisDistance <= reactDistance))
         {
-            MoveTowardsTarget(); // AI движется к цели
+            posend = targ.transform.position;
+
+            direction = posend - gameObject.transform.position;
+            direction.Normalize();
+            gameObject.transform.transform.Translate(moveSpeed * Time.deltaTime * direction);
+            animator.SetBool("Run", true);
         }
         else
         {
-            animator.SetBool("Run", false); // AI останавливается
+            animator.SetBool("Run", false);
         }
 
-        // Если AI находится на расстоянии maxDistance от цели
-        if (Mathf.Approximately(thisDistance, maxDistance))
+
+
+        if (thisDistance.ToString("f1") == maxDistance.ToString("f1"))
         {
-            PunchTarget(); // AI атакует цель
-            Debug.Log("удар");
+            tmr += Time.deltaTime;
+            if (tmr >= 1)
+            {
+                animator.SetBool("Punch", true);
+                tmr = 0;
+                targ.GetComponent<PlayerStats>()._currentHealth -= 10;
+            }
+            else
+            {
+                animator.SetBool("Punch", false);
+            }
         }
 
-        UpdateDirection(); // Обновляем направление AI
 
-        // Если AI находится дальше reactDistance от цели и ближе к конечной позиции, чем 0.1f
+        if (direction.x < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        else if (direction.x > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+
+
         if ((thisDistance > reactDistance) && (ft > 0.1f))
         {
-            ReturnToFirstPoint(); // AI возвращается к начальной позиции
+            Debug.DrawLine(gameObject.transform.position, firstPoint, Color.green);
+            posend = firstPoint;
+            direction = posend - gameObject.transform.position;
+            direction.Normalize();
+            gameObject.transform.Translate(moveSpeed * Time.deltaTime * direction);
+            animator.SetBool("Run", true);
         }
+
 
         if (thisDistance <= 0.1f)
         {
-            StopMoving(); // AI останавливается
+            moveSpeed = 0;
+            animator.SetBool("Run", false);
         }
 
         if (thisDistance > 0)
         {
-            moveSpeed = 0.5f; // Устанавливаем скорость движения AI
+            moveSpeed = 0.5f;
         }
 
         if (ft == 0)
         {
-            StopMoving(); // AI останавливается
+            moveSpeed = 0;
         }
-    }
-
-    private void MoveTowardsTarget()
-    {
-        posend = targ.position; // Устанавливаем конечную позицию как позицию цели
-
-        direction = posend - _transform.position; // Вычисляем направление движения
-        direction.Normalize(); // Нормализуем направление
-        _transform.Translate(moveSpeed * Time.deltaTime * direction); // Двигаем AI в направлении цели
-        animator.SetBool("Run", true); // Включаем анимацию бега
-    }
-
-    private void PunchTarget()
-    {
-        tmr += Time.deltaTime; // Увеличиваем таймер
-        if (tmr >= 1)
-        {
-            animator.SetBool("Punch", true); // Включаем анимацию удара
-            tmr = 0; // Сбрасываем таймер
-            targ.GetComponent<PlayerStats>()._currentHealth -= 10; // Наносим урон цели
-            Debug.Log("удар");
-        }
-        else
-        {
-            animator.SetBool("Punch", false); // Выключаем анимацию удара
-        }
-    }
-
-    private void UpdateDirection()
-    {
-        // Если AI движется влево, меняем масштаб на (-1, 1, 1)
-        if (direction.x < 0)
-        {
-            _transform.localScale = new Vector3(-1, 1, 1);
-        }
-        // Если AI движется вправо, меняем масштаб на (1, 1, 1)
-        else if (direction.x > 0)
-        {
-            _transform.localScale = new Vector3(1, 1, 1);
-        }
-    }
-
-    private void ReturnToFirstPoint()
-    {
-        Debug.DrawLine(_transform.position, firstPoint, Color.green); // Рисуем линию от AI до начальной позиции
-        posend = firstPoint; // Устанавливаем конечную позицию как начальную позицию
-        direction = posend - _transform.position; // Вычисляем направление движения
-        direction.Normalize(); // Нормализуем направление
-        _transform.Translate(moveSpeed * Time.deltaTime * direction); // Двигаем AI в направлении начальной позиции
-        animator.SetBool("Run", true); // Включаем анимацию бега
-    }
-
-    private void StopMoving()
-    {
-        moveSpeed = 0; // Останавливаем AI
-        animator.SetBool("Run", false); // Выключаем анимацию бега
     }
 }

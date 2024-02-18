@@ -1,0 +1,423 @@
+fileFormatVersion: 2
+guid: f0d2a433b83cea74b9e64d45fae62611
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9165158336452013147
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_0"
+  - first:
+      213: -678734096740123617
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_1"
+  - first:
+      213: 9003400584069030903
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_2"
+  - first:
+      213: 9170664036729114823
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_3"
+  - first:
+      213: -5439533864792536616
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_4"
+  - first:
+      213: -328900065168803749
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_5"
+  - first:
+      213: -2114321087203713964
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_6"
+  - first:
+      213: 4969424489775189313
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_7"
+  - first:
+      213: 6806233931167394350
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_8"
+  - first:
+      213: -774487927955536113
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_9"
+  - first:
+      213: 3808014856207061812
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_10"
+  - first:
+      213: 7118216430970145239
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_11"
+  - first:
+      213: 1630706917598420909
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_12"
+  - first:
+      213: 966936197095393262
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_13"
+  - first:
+      213: 8057649269222347415
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_14"
+  - first:
+      213: 5834006375327353343
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_15"
+  - first:
+      213: 7391879319320095092
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_16"
+  - first:
+      213: -8101132400639912011
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_17"
+  - first:
+      213: -3359918145489533167
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_18"
+  - first:
+      213: 7372888083142375373
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_19"
+  - first:
+      213: 806640251212321426
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_20"
+  - first:
+      213: -4090266015359751991
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_21"
+  - first:
+      213: 6988169435959255056
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_22"
+  - first:
+      213: -1826107153520999039
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_23"
+  - first:
+      213: -8314160588764522946
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_24"
+  - first:
+      213: -1976315550166470191
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_25"
+  - first:
+      213: -1232672698321727050
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_26"
+  - first:
+      213: 2392781761333063608
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_27"
+  - first:
+      213: 390477666087953029
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_28"
+  - first:
+      213: 2725791339352722141
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_29"
+  - first:
+      213: 3277436735550166307
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_30"
+  - first:
+      213: 7507394623153727889
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_31"
+  - first:
+      213: 1743703603847473955
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_32"
+  - first:
+      213: 6368908529905704635
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_33"
+  - first:
+      213: -5180758463438856327
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_34"
+  - first:
+      213: 7107194018841074818
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_35"
+  - first:
+      213: 3814461144005666339
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_36"
+  - first:
+      213: 3764964507730932364
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_37"
+  - first:
+      213: -8494965093645307208
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_38"
+  - first:
+      213: -1276564422604402780
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_39"
+  - first:
+      213: -8189324201028354012
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_40"
+  - first:
+      213: 1959322754154463796
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_41"
+  - first:
+      213: 5474500229938411857
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_42"
+  - first:
+      213: -3795779767393152310
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_43"
+  - first:
+      213: 1511453704765623217
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_44"
+  - first:
+      213: 316810604759876598
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_45"
+  - first:
+      213: 8291502777370192554
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_46"
+  - first:
+      213: -453690482686789191
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_47"
+  - first:
+      213: -4043515784395393425
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_48"
+  - first:
+      213: -7708346051236896687
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_49"
+  - first:
+      213: 674334164925642346
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_50"
+  - first:
+      213: 2881985128727220958
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_51"
+  - first:
+      213: 602826388269273814
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_52"
+  - first:
+      213: -2580695315467352643
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_53"
+  - first:
+      213: 8987090359262094797
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_54"
+  - first:
+      213: -3545452729690238166
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_55"
+  - first:
+      213: -4249206202780022592
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_56"
+  - first:
+      213: 4041201335732201868
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_57"
+  - first:
+      213: -2524906935228624058
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_58"
+  - first:
+      213: 8439656441555522137
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_59"
+  - first:
+      213: 8873703723411639864
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_60"
+  - first:
+      213: -60657178545865344
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_61"
+  - first:
+      213: 1907277683498052026
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_62"
+  - first:
+      213: -3739616988856869679
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_63"
+  - first:
+      213: 7641103438366913549
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_64"
+  - first:
+      213: 1593487344721823262
+    second: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+      1_65"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+        1_3"
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 616
+        width: 453
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c050b76a5eb44f70800000000000000
+      internalID: 9170664036729114823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F
+        1_30"
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 507
+        width: 453
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325984ca85bcb7d20800000000000000
+      internalID: 3277436735550166307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c2889032d17071a4cac1d0e7878725be
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "1688936178_art-kartinkof-club-p-palatka-piksel-art-56 \u043A\u043E\u043F\u0438\u044F 1_0": -1638012316
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -41,11 +41,11 @@ public class Depth : MonoBehaviour
 
         if (gA.y > gB.y) //Если точка А выше точки Б, то слой персонажа меняется на 1 
         {
-            sr.sortingOrder = 1;
+            sr.sortingOrder = 2;
         }
         else
         {
-            sr.sortingOrder = 3;
+            sr.sortingOrder = 4;
         }
 
         if (isPlayerBehind)
